@@ -1,0 +1,453 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    text-decoration-line: none;
+    list-style: none;
+}
+
+
+/*Estilos del Catálogo*/
+
+body{
+    background-color: #F0F0F0;
+}
+
+header{
+    background-color: #F5F5F5;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 1px 1px 2px rgba( 0, 0, 0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.cont_header{
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont_filter_header ul{
+    padding: 0 50px 10px 50px;
+}
+
+.cont_info_header, .cont_imagen_header, img{
+    margin: auto 0;
+}
+
+h1{
+    color: #217732;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.subtitle_header{
+    color: #217732;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.cont_imagen_header, img{
+    width: 120px;
+    height: auto;
+}
+
+.cont_filter_header, ul{
+    padding: 10px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.cont_filter_header ul li{
+    width: 150px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.cont_filter_header ul .active, .cont_filter_header ul .inactive:hover{
+    box-shadow: 0 0 5px rgba( 0, 0, 0,.1);
+    border-radius: 10px;
+}
+
+.cont_filter_header ul li a{
+    color: #217732;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.cont_filter_header ul .inactive:hover{
+    opacity: 1;
+}
+
+.cont_filter_header ul .inactive{
+    opacity: .3;
+}
+
+.cont_cards_motos_torvan{
+    padding: 220px 50px 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.card_motos_torvan{
+    background-color: #FFFFFF;
+    box-shadow: 0 0 5px rgba( 0, 0, 0,.1);
+    padding: 8px;
+
+    border-radius: 15px;
+}
+
+video{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cont_imagen_card{
+    position: relative;
+}
+
+.logotype_torvan-c, .logotype_torvan-e img{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 5px rgba( 0, 0, 0,.3);
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.logotype_torvan-c img{
+    width: 80px;
+    height: auto;
+}
+
+.logotype_torvan-e img{
+    width: 50px;
+    height: auto;
+}
+
+.cont_info_card{
+    padding: 10px;
+}
+
+h2{
+    color: #2C2C2C;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.moto_type{
+    color: rgba(44, 44, 44, .5);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cont_price_card{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.title_price{
+    color: rgba(44, 44, 44, .5);
+    font-size: 20px;
+}
+
+.price{
+    color: #00A700;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.cont_free{
+    width: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 7px rgba( 0, 0, 0,.3);
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+.free_text{
+    text-align: center;
+    color: #00A700;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cont_cards_motos_torvan a:hover{
+    box-shadow: 0 0 10px rgba(5, 131, 1, 0.3);
+    border-radius: 15px;
+}
+
+
+/*Estilos de Detalles de las Motos*/
+
+.header_detalis_motos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 0;
+}
+
+.icon-cancel img{
+    width: 40px;
+    margin-right: 50px;
+}
+
+.logo-Torvan{
+    margin-left: 50px;
+}
+
+.main_details{
+    display: flex;
+    gap: 50px;
+    height: 100dvh;
+}
+
+.video_moto_details{
+    width: 450px;
+    margin: 140px 0 0 50px;
+}
+
+.info_title_details{
+    margin-top: 140px;
+    display: flex;
+    gap: 40px;
+}
+
+.title_text_details{
+    color: #217732;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.subtitle_text_details{
+    color: rgba(44, 44, 44, .7);
+    font-size: 18px;
+}
+
+.details_moto_info_text{
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(44, 44, 44, .7);
+}
+
+.edit_text_details{
+    font-weight: 700;
+    color: rgba(44, 44, 44, 1);
+}
+
+.cont_free_details{
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding: 10px 15px;
+    height: 20px;
+    box-shadow: 0 0 10px rgba(44, 44, 44, .1);
+}
+
+.free_text_details{
+    color: #00A700;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cont_btn{
+    display: flex;
+    border-radius: 20px;
+    padding: 30px 20px;
+    margin-top: 150px;
+    gap: 20px;
+}
+
+.cont_btn a{
+    background-color: #00A700;
+    display: flex;
+    border-radius: 50px;
+    width: 300px;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+}
+
+.cont_btn a img{
+    height: 20px;
+}
+
+.cont_pricing{
+    margin-top: 30px;
+}
+
+.title_text_pricing{
+    font-size: 25px;
+    color: #217732;
+}
+
+
+
+@media (max-width: 1024px) {
+    .cont_cards_motos_torvan{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 780px) {
+    .cont_cards_motos_torvan{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    
+    .cont_header{
+        padding: 20px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    .subtitle_header{
+        font-size: 14px;
+    }
+
+    .cont_imagen_header, img{
+        width: 100px;
+    }
+
+    .cont_filter_header ul{
+        padding: 0 20px 10px 20px;
+    }
+
+    .cont_filter_header ul li{
+        width: 100px;
+        padding: 5px;
+    }
+
+    .cont_filter_header ul li a{
+        font-size: 14px;
+    }
+
+    .cont_cards_motos_torvan{
+        padding: 180px 10px 10px 10px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .card_motos_torvan{
+        width: 180px;
+    }
+
+    .logotype_torvan-c, .logotype_torvan-e img{
+        padding: 1px 6px;
+        border-radius: 8px;
+    }
+
+    .logotype_torvan-c img{
+        width: 60px;
+    }
+
+    .logotype_torvan-e img{
+        padding: 4px 6px;
+        width: 40px;
+    }
+
+    .cont_info_card{
+        padding: 5px;
+    }
+
+    h2, .price{
+        font-size: 18px;
+    }
+
+    .moto_type{
+        font-size: 14px;
+    }
+
+    .cont_price_card{
+        margin-top: 10px;
+    }
+
+    .title_price{
+        font-size: 14px;
+    }
+
+    .cont_free{
+        padding: 3px 8px;
+        width: 40px;
+    }
+
+    .free_text{
+        font-size: 12px;
+        text-align: center;
+    }
+
+
+    /*Detalles de las motos*/
+
+    .icon-cancel img{
+        width: 30px;
+        margin-right: 20px;
+    }
+
+    .logo-Torvan{
+        margin-left: 20px;
+    }
+
+    .main_details{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .video_moto_details{
+        width: auto;
+        margin: 120px 20px 0 20px;
+    }
+
+    .info_title_details{
+        margin-top: 20px;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .title_text_details{
+        font-size: 25px;
+    }
+
+    .subtitle_text_details{
+        font-size: 16px;
+    }
+
+    .details_moto_info_text{
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    .cont_free_details{
+        text-align: center;
+        padding: 5px 10px;
+        height: 20px;
+    }
+
+    .cont_btn{
+        padding: 30px 20px;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .cont_btn a{
+        padding: 10px;
+    }
+
+    .cont_pricing{
+        padding: 0 20px;
+    }
+}
